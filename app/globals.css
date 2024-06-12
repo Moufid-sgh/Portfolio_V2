@@ -2,32 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+  .title {
+    background: -webkit-linear-gradient(#eee, #333, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
   }
+
+
+  /* anmation work link */
+  .arrowsvg {
+    stroke: #090909;
+    stroke-width: 2px;
+    stroke-dasharray: 706;
+    stroke-dashoffset: 706;
+    transition: all 0.6s ease-in-out 0s;
+  }
+
+  .workContainer:hover .arrowsvg {
+    stroke-dasharray: 706;
+    stroke-dashoffset: 0;
+  }
+
+
+  /* animation perv & next btn*/
+  .underlineAnim:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .underlineAnim:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
 }
