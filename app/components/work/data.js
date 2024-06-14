@@ -4,13 +4,13 @@ export const data = [
      tech: 'React js',
      role: 'FullStack developer',
      link: 'https://www.originalcranium.com/',
-     img : '/work/test.jpg'
+     img : '/work/cranium_lg.webp'
     },
 
     {name: 'Tutoria',
      tech: 'Next js / Node js / PostgreSQL',
      role: 'FullStack developer',
      link: 'https://www.originalcranium.com/',
-     img : '/work/cranium_lg.webp'
+     img : '/work/test.jpg'
     },
 ] 

@@ -39,7 +39,7 @@ const Details = () => {
         gsap.fromTo(roleRef.current, { y: 30, skewX: -15 }, animation)
         gsap.fromTo(indexRef.current, { y: 30, skewX: -15 }, animation)
         gsap.fromTo(nameRef.current, { y: 80, skewX: -15 }, animation)
-        gsap.fromTo(imgRef.current, { y: 550, scale: 1.5 }, { y: 0, scale: 1, duration: 1, ease: 'power1.out' })
+        gsap.fromTo(imgRef.current, { y: 250, scale: 1.5 }, { y: 0, scale: 1, duration: 1, ease: 'power1.out' })
 
     }, [currentIdx])
 

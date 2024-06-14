@@ -7,6 +7,9 @@ const barlow = Barlow({
  });
 
 export const metadata = {
+  icons: {
+    icon: '/logo.png',
+  },
   title: "Moufid Sghiri",
   description: "Passionate creative developer from Tunisia, who blends the worlds of art and code to create captivating digital experiences.",
 };
